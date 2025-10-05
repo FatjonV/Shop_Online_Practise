@@ -1,0 +1,9 @@
+<% if (product) { %>
+  <form action="/cart" method="POST">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <input type="hidden" name="productId" value="<%= product._id ? product._id.toString() : '' %>">
+    <button type="submit" class="btn">Add to Cart</button>
+  </form>
+<% } else { %>
+  <p style="color: red;">❌ Product missing or invalid.</p>
+<% } %>

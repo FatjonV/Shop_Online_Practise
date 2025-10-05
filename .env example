@@ -1,0 +1,6 @@
+MONGO_USER=fatjonveseli
+MONGO_PASSWORD=placeholder
+MONGO_DEFAULT_DATABASE=shop
+STRIPE_SECRET_KEY=placeholder
+STRIPE_PUBLIC_KEY=placeholder
+PORT=4000
